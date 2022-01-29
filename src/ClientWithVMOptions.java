@@ -8,9 +8,9 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 /*
--Djavax.net.ssl.keyStore=resources/clientkeystore.jks
+-Djavax.net.ssl.keyStore=/usr/absolute_path/resources/clientkeystore.jks
 -Djavax.net.ssl.keyStorePassword=changeit
--Djavax.net.ssl.trustStore=resources/clienttruststore.jks
+-Djavax.net.ssl.trustStore=/usr/absolute_path/resources/clienttruststore.jks
 -Djavax.net.ssl.trustStorePassword=changeit
  */
 

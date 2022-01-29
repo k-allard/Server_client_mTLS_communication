@@ -19,9 +19,9 @@ import java.security.cert.CertificateException;
 public class ServerWithCode {
 
     private static final int SERVER_PORT = 8443;
-    private static final String PATH_TO_SERVER_KEYSTORE = "resources/serverkeystore.jks";
+    private static final String PATH_TO_SERVER_KEYSTORE = "/usr/absolute_path/resources/serverkeystore.jks";
     private static final String SERVER_KEYSTORE_PASS = "changeit";
-    private static final String PATH_TO_SERVER_TRUSTSTORE = "resources/servertruststore.jks";
+    private static final String PATH_TO_SERVER_TRUSTSTORE = "/usr/absolute_path/resources/servertruststore.jks";
     private static final String SERVER_TRUSTSTORE_PASS = "changeit";
 
     public static void main(String[] args) throws KeyStoreException, IOException,

@@ -7,9 +7,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /*
--Djavax.net.ssl.keyStore=resources/serverkeystore.jks
+-Djavax.net.ssl.keyStore=/usr/absolute_path/resources/serverkeystore.jks
 -Djavax.net.ssl.keyStorePassword=changeit
--Djavax.net.ssl.trustStore=resources/servertruststore.jks
+-Djavax.net.ssl.trustStore=/usr/absolute_path/resources/servertruststore.jks
 -Djavax.net.ssl.trustStorePassword=changeit
  */
 

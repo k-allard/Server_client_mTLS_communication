@@ -21,9 +21,9 @@ public class ClientWithCode {
 
     private static final String SERVER_HOST = "localhost";
     private static final int SERVER_PORT = 8443;
-    private static final String PATH_TO_CLIENT_KEYSTORE = "resources/clientkeystore.jks";
+    private static final String PATH_TO_CLIENT_KEYSTORE = "/usr/absolute_path/resources/clientkeystore.jks";
     private static final String CLIENT_KEYSTORE_PASS = "changeit";
-    private static final String PATH_TO_CLIENT_TRUSTSTORE = "resources/clienttruststore.jks";
+    private static final String PATH_TO_CLIENT_TRUSTSTORE = "/usr/absolute_path/resources/clienttruststore.jks";
     private static final String CLIENT_TRUSTSTORE_PASS = "changeit";
 
     public static void main(String[] args) throws UnrecoverableKeyException, CertificateException,

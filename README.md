@@ -1,5 +1,12 @@
 Клиент и сервер, использующие mTLS - взаимную аутентификацию.
 
+1. Запустиь сервер: ServerWithCode.java (вариант с загрузкой cacerts и keystore программно) или ServerWithVMOptions.java (загрузка cacerts и keystore через JVM options). Не забыть поменять пути до файлов
+
+2. Запустить клиент: ClientWithCode.java или ClientWithVMOptions.java. Не забыть поменять пути до файлов на нормальные
+
+
+Как создать cacerts и keystore с нуля без регистрации и смс:
+
 1. Создаем keystore сервера с его собственным сертом:
    `keytool -genkey -keyalg DSA -keypass changeit -storepass changeit -keystore serverkeystore.jks`
 
@@ -17,4 +24,3 @@
    
 6. Создаем truststore клиента:
    `keytool -import -v -trustcacerts -file serverCA.cer -keypass changeit -storepass changeit -keystore clienttruststore.jks`
-
